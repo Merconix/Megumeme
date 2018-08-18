@@ -3,7 +3,7 @@ An anime themed discord bot with commands of various types. Designed for persona
 Coded in Node.js using the Discord.js module.
 
 ## If you plan to host this personally:
-Create a folder in `/data/logs/` called "ServerName:ServerID" for each server you add the bot to. This directory is required for the bot to save logs of offensive language.
+Create a folder in `/data/logs/` called `ServerName:ServerID` for each server you add the bot to. This directory is required for the bot to save logs of offensive language.
 
 Open `/preferences/unchanging.js` and fill in the required data such as bot tokens and API keys.
 
