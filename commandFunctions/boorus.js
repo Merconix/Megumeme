@@ -285,7 +285,7 @@ module.exports =
                 {
                   "name": "Lewdbooru",
                   "url": "http://lewd.booru.org/",
-                  "icon_url": "https://cdn.discordapp.com/icons/466307394172092437/8022bb2e7f413eda3b653b0ef9c4c783.png"
+                  "icon_url": "https://i.imgur.com/srkKHLv.jpg"
                 },
                 "fields": [
                 {
