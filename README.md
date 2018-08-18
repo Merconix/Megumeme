@@ -9,6 +9,8 @@ Open `/preferences/unchanging.js` and fill in the required data such as bot toke
 
 Open `/preferences/AdminRole.txt` and change that to the name of the role you want to have access to admin commands.
 
+Open `/commandFunctions/management.js` and change instances of `"YOUR USER ID HERE"` to your user ID (Or delete the lines to remove PMs when the the bot is triggered).
+
 Install the following modules:
   >Discord.js, 
   >danbooru, 
