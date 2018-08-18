@@ -1,6 +1,5 @@
-# Megumeme
-An anime themed discord bot with commands of various types. Designed for personal use but can be configured to run on multiple servers at once.
-Coded in Node.js using the Discord.js module.
+# Jyansei
+The beta test bot for Megumeme. Everything will work the same as the next version of Megumeme, except for the prefixes becoming j! and J! instead of m! and M!
 
 ## If you plan to host this personally:
 Create a folder in `/data/logs/` called `ServerName:ServerID` for each server you add the bot to. This directory is required for the bot to save logs of offensive language.
