@@ -1,5 +1,8 @@
 # Megumeme
 An anime themed discord bot with commands of various types. Designed for personal use but can be configured to run on multiple servers at once.
+
+This is a personal project, as such commenting is a bit subpar and will improve over time.
+
 Coded in Node.js using the Discord.js module.
 
 ## If you plan to host this personally:
