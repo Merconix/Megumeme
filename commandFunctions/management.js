@@ -180,7 +180,7 @@ module.exports =
         catch(e)
         {
           msg.channel.send("Man, those are some short-ass messages dude.")
-          client.users.get("322041078385737739").sendMessage(msgHistory[msgHistory.length -1].Sender + ' has been spamming super short messages in: '+  msgHistory[msgHistory.length -1].Server + ', in channel:' + msgHistory[msgHistory.length -1].Channel);
+          client.users.get("YOUR USER ID HERE").sendMessage(msgHistory[msgHistory.length -1].Sender + ' has been spamming super short messages in: '+  msgHistory[msgHistory.length -1].Server + ', in channel:' + msgHistory[msgHistory.length -1].Channel);
         }
       }
       else if(listOfRecentContent[listOfRecentContent.length -1].length >= highLength && listOfRecentContent[listOfRecentContent.length -2].length >= highLength && listOfRecentContent[listOfRecentContent.length -3].length >= highLength)
@@ -196,7 +196,7 @@ module.exports =
         catch(e)
         {
           msg.channel.send("Man, those are some long-ass messages dude.")
-          client.users.get("322041078385737739").sendMessage(msgHistory[msgHistory.length -1].Sender + ' has been spamming super long messages in: '+  msgHistory[msgHistory.length -1].Server + ', in channel:' + msgHistory[msgHistory.length -1].Channel);
+          client.users.get("YOUR USER ID HERE").sendMessage(msgHistory[msgHistory.length -1].Sender + ' has been spamming super long messages in: '+  msgHistory[msgHistory.length -1].Server + ', in channel:' + msgHistory[msgHistory.length -1].Channel);
         }
       }
     if (numOfRepeatSenders > 7)
@@ -205,7 +205,7 @@ module.exports =
       {
         console.log('Spam Sender Detected.');
         msg.reply("That's a lot of messages. Maybe think about using more than one sentence per message, yeah?")
-        client.users.get("322041078385737739").sendMessage(msgHistory[msgHistory.length -1].Sender + ' has been spamming messages frequently in: ' +  msgHistory[msgHistory.length -1].Server + ', in channel: ' + msgHistory[msgHistory.length -1].Channel);
+        client.users.get("YOUR USER ID HERE").sendMessage(msgHistory[msgHistory.length -1].Sender + ' has been spamming messages frequently in: ' +  msgHistory[msgHistory.length -1].Server + ', in channel: ' + msgHistory[msgHistory.length -1].Channel);
         var oldHistory = msgHistory.splice(0,msgHistory.length);
         contentWarnings = 0
       }
@@ -220,7 +220,7 @@ module.exports =
       {
         console.log('Repeated Content Detected.');
         msg.channel.send("Yo, guys. Could we have something different in here please?")
-        client.users.get("322041078385737739").sendMessage(msgHistory[msgHistory.length -1].Sender + ' has been spamming the message: ' + listOfRecentContent[listOfRecentContent.length -1] + ' in: '+  msgHistory[msgHistory.length -1].Server + ', in channel:' + msgHistory[msgHistory.length -1].Channel);
+        client.users.get("YOUR USER ID HERE").sendMessage(msgHistory[msgHistory.length -1].Sender + ' has been spamming the message: ' + listOfRecentContent[listOfRecentContent.length -1] + ' in: '+  msgHistory[msgHistory.length -1].Server + ', in channel:' + msgHistory[msgHistory.length -1].Channel);
         var oldHistory = msgHistory.splice(0,msgHistory.length);
         contentWarnings = 0
       }
