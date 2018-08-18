@@ -2,8 +2,8 @@
 // Prepares required libraries
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'm!';
-const prefixUpper = 'M!';
+const prefix = 'j!';
+const prefixUpper = 'J!';
 const Danbooru = require('danbooru');
 const agent = require('superagent');
 const request = require('request');
