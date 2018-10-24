@@ -266,6 +266,10 @@ client.on('message', msg =>
 			{
 				misc.test(arg, msg)
 			}
+			else if (command == 'chucknorris')
+			{
+				misc.chucknorris(arg, msg)
+			}
 			else
 			{
 				console.log('Command failure.')
