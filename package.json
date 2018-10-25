@@ -2,7 +2,7 @@
     "name": "megumeme",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Merconix/Megumeme.git"
+        "url": "https://github.com/Merconix/Megumeme"
     },
     "version": "1.0.0",
     "description": "",
@@ -11,7 +11,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "https://github.com/Merconix/",
+    "author": "Merconix",
     "license": "GPL-3.0",
     "dependencies": {
         "discord.js": "github:discordjs/discord.js",
