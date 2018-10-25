@@ -17,7 +17,7 @@ Open `/commandFunctions/management.js` and change instances of `"YOUR USER ID HE
 Create the folder `data` in the directory you intend to run the bot from and place inside it the `setdex_sm.js` file that can be found in the official damagecalc Git here: https://github.com/Zarel/honko-damagecalc and show some love to those guys while you're at it.
 (This avoids the pathing conflict had previously, since I pull these assets from a source outside of the bot project itself.)
 
-Install the following modules:
+Install the following modules (can be done with `npm i`):
   >Discord.js, 
   >danbooru, 
   >request, 

@@ -82,5 +82,31 @@ module.exports =
 		{
 		  file: 'https://media.giphy.com/media/TPkLd5oec1SzS/giphy.gif'
 		});
-  }
+	},
+	chucknorris: function(arg, msg)
+	{
+	const url = `https://api.chucknorris.io/jokes/random`;
+
+	const footer = `Requested by: ${msg.author.tag} | Provided by api.chucknorris.io`;
+	
+	var rp = require('request-promise');	
+	rp({uri: url,
+			json: true})
+	.then(function(data) {
+		msg.channel.send({embed: {
+			timestamp: new Date(),
+			color: 0xdd67ff,
+			fields: [{
+				name: "Chuck Norris",
+				value: data.value
+			}],
+			footer: {
+				text: footer
+			}
+		}});
+	})
+	.catch(function (err) {
+		msg.channel.send("`⊙﹏⊙ Sorry. This is broken right now.`")
+	});
+	}
 }
