@@ -87,7 +87,7 @@ module.exports =
 	{
 	const url = `https://api.chucknorris.io/jokes/random`;
 
-	var footer = `Requested by: ${msg.author.tag} | Provided by api.chucknorris.io`;
+	const footer = `Requested by: ${msg.author.tag} | Provided by api.chucknorris.io`;
 	
 	var rp = require('request-promise');	
 	rp({uri: url,
