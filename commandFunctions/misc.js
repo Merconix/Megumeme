@@ -1,36 +1,37 @@
 module.exports = 
 {
-  explosion: function(arg, msg, $, prefs)
+	explosion: function(arg, msg, $, prefs)
     {
-      console.log('Command recieved.')
-      //Grabs top 5 posts from the "Explosion" search on GIPHY
-      var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=explosion&api_key=" + prefs.APIKey + "&limit=5");
-      //Waits until download is done to prevent process overtaking download
-      xhr.done(function(data)
-      { 
-        console.log("Data grab successful.");
-        //Randomises which of the 5 posts is shown
-        var chosen = data.data[Math.floor(Math.random() * data.data.length)]
-        //Grabs looping MP4 file from that image and embeds it into discord message
-        var final = chosen.images.looping.mp4
-        console.log(final)
-        msg.channel.send('',
-        {
-          file: final
-        });
-      });
+		console.log('Command recieved.');
+		//Grabs top 5 posts from the "Explosion" search on GIPHY
+		var xhr = $.getJSON("http://api.giphy.com/v1/gifs/search?q=explosion&api_key=" + prefs.APIKey + "&limit=5/");
+		//Waits until download is done to prevent process overtaking download
+		xhr.done(function(data)
+		{ 
+			console.log("Data grab successful.");
+			//Randomises which of the 5 posts is shown
+			var chosen = data.data[Math.floor(Math.random() * data.data.length)]
+			//Grabs looping MP4 file from that image and embeds it into discord message
+			var final = chosen.images.looping.mp4
+			console.log(final)
+			msg.channel.send('',
+			{
+				file: final
+			});
+		});
+		console.log('-----');
     },
     deskflip: function(arg, msg, $, prefs)
     {
-      console.log('Command recieved.')
-      msg.channel.send('',
-      {
-        file: 'https://img00.deviantart.net/0bac/i/2013/091/f/c/desk_flip_guy_in_hd_by_lemmino-d6021t4.png'
-      });
-    },
+		console.log('Command recieved.')
+		msg.channel.send('',
+		{
+			file: 'https://img00.deviantart.net/0bac/i/2013/091/f/c/desk_flip_guy_in_hd_by_lemmino-d6021t4.png'
+		});
+	},
 	rng: function(arg, msg)
     {
-    console.log('Command recieved.');
+		console.log('Command recieved.');
 		try
 		{
 			if (arg == '' || arg == 'rng' || arg =='random')
@@ -77,10 +78,14 @@ module.exports =
 		}
 	},
 	celebrate: function(arg, msg)
-  {
+	{
 		msg.channel.send('',
 		{
 		  file: 'https://media.giphy.com/media/TPkLd5oec1SzS/giphy.gif'
 		});
-  }
+	},
+	test: function(arg, msg)
+	{
+		return;
+	}
 }
