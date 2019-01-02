@@ -87,7 +87,7 @@ if (millisTill12 < 0) {
 }
 setTimeout(function()
 {
-	client.users.get("322041078385737739").send("Get up you lazy sod, if I am you have to be.");
+	client.users.get("YOUR USER ID HERE").send("Get up you lazy sod, if I am you have to be.");
 	console.log("It's midday...Notifying of uptime");
 	console.log('-----');
 	
@@ -127,7 +127,7 @@ client.on('message', msg =>
 	msgHistory.push(messageDetails);
 		
 	//Checks if sender was yours truly. If so looks for conversation starters.
-	if (sender == 'YOUR USER ID HERE')
+	if (sender == 'YourName#YourNumber')
 	{
 		if (msg.content.toLowerCase().startsWith('yo megu'))
 		{
