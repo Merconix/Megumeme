@@ -127,7 +127,7 @@ client.on('message', msg =>
 	msgHistory.push(messageDetails);
 		
 	//Checks if sender was yours truly. If so looks for conversation starters.
-	if (sender == 'Merc#3336')
+	if (sender == 'YOUR USER ID HERE')
 	{
 		if (msg.content.toLowerCase().startsWith('yo megu'))
 		{
