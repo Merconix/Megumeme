@@ -1,6 +1,5 @@
-# Jyansei
-
-The beta test bot for Megumeme. Everything will work the same as the next version of Megumeme, except for the prefixes becoming j! and J! instead of m! and M!
+# Megumeme
+An anime themed discord bot with commands of various types. Designed for personal use but can be configured to run on multiple servers at once.
 
 This is a personal project, as such commenting is a bit subpar and will improve over time.
 
